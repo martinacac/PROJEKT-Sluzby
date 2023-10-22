@@ -1,0 +1,125 @@
+/* 
+Montserrat z Google Fonts.Použité tloušťky písma 300, 400 a 500 (light, regular, medium)
+
+pozadí stránky skoro bílá
+#FAFAFA
+
+h1, h2 černá
+#000000
+
+písmo a šedé tlačítko
+#8B8B8B
+
+modré tlačítko
+#407BFF
+
+bílé pozadí malých 3 boxů 
+#FFFFFF
+
+#407BFF1F světle modrá
+
+Vše je pravidelné, vycentrované na střed, 3 obdélníky vedle seba zabírají každý 1/3 prostoru (+ mezery mezi nimi). Mezi obsahem a pravý a levým okrajem stránky je 20px mezera, nahoře a dole 60px. 
+Obsah je plně responzivní a natahuje se vždy přes celou šířku stránky. 
+
+breakpoint 640px / 1100px
+Desktopová verze je trochu odlišná. Na desktopovou verzi přepni v prohlížečích širších než 1100px. 
+Celý obsah bude uvnitř "pruhu", který má šířku 1040px a je vycentrovaný uprostřed stránky. 490-60-490 550-60-430 430-60-550px, vertikální rozestup mezi sekcemi 80
+*/
+
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #8B8B8B;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+main {
+    padding: 0 20px 40px 20px;
+}
+
+.mainfoto {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 10px 0;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h2 {
+    margin: 60px 0 15px 0;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.prouzek {
+    width: 60px;
+    height: 2px;
+    margin: 10px auto 30px auto;
+    background-color: #407BFF;
+}
+
+.button {
+    border-radius: 20px;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 10px auto;
+    max-width:max-content;
+}
+
+.modry {
+    background-color: #407BFF;
+}
+
+.sedy {
+    background-color: #8B8B8B;
+}
+
+.box {
+    display: flex;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 15px 0;       
+}
+
+.box p {
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.par1 {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:640px) {
+   .tlacitka {
+        display: flex;
+        justify-content: center;
+   } 
+
+   .button {
+        margin: 10px;
+   }
+
+   .trojbox {
+    display: flex;
+    gap: 20px;
+   }
+}
+
+
+@media screen and (min-width:1100px) {
+    
+}
